@@ -1,0 +1,31 @@
+$red: #da5347;
+$blue: #1b9edb;
+$green: #75ba50;
+
+// This is just here to demonstrate scroll. You can remove it :)
+body {
+  height: 3000px;
+}
+
+.Sticky {
+  padding: 20px;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+
+  h3 { margin: 0; }
+
+  &.sticky-one { background: $red; }
+  &.sticky-two { background: $green; }
+  &.sticky-three { background: $blue; }
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    margin: 0;
+  }
+}

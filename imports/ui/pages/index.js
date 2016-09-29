@@ -1,11 +1,16 @@
 import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import { Sticky } from '../components/sticky.js';
 
 export const Index = () => (
-  <Jumbotron className="text-center">
-    <h2>Base</h2>
-    <p>A starting point for Meteor applications.</p>
-    <p><a className="btn btn-success" href="https://themeteorchef.com/base" role="button">Read the Documentation</a></p>
-    <p style={ { fontSize: '16px', color: '#aaa' } }>Currently at v4.7.0</p>
-  </Jumbotron>
+  <div>
+    <Sticky className="sticky-one" exit="300">
+      <h3>Testing #1</h3>
+    </Sticky>
+    <Sticky className="sticky-two">
+      <h3>Testing #2</h3>
+    </Sticky>
+    <Sticky className="sticky-three" enter="1200" exit="1500">
+      <h3>Testing #3</h3>
+    </Sticky>
+  </div>
 );
